@@ -1,5 +1,5 @@
 from rapidconnect import RapidConnect
-import sys`
+import sys
 
 def weather(city):
     rapid = RapidConnect("default-application_59bbda2be4b0b0cacf7c7995",
@@ -10,3 +10,6 @@ def weather(city):
 
     desc = result["query"]["results"]["channel"]["item"]["condition"]["temp"]
     temp = result["query"]["results"]["channel"]["item"]["condition"]["temp"]
+
+    print "I'ts" + desc + "in {}, with a temperature of {} Farenheit".format(city.capitalize(), temp)
+    sys.stdout.flush()
