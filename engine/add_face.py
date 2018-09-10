@@ -3,11 +3,7 @@ import cv2
 import sys
 import _pickle as c
 
-'''
-command line args: imgfile, name_of_person_in_image
-'''
 
-# todo display faces while enc
 s, img, name = sys.argv
 if img != "cam":
     img_array = f.load_image_file(img)
